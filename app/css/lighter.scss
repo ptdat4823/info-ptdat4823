@@ -1,0 +1,85 @@
+//for the lighter move animation
+.lighter-tail {
+  opacity: 0;
+  width: calc(var(--width) * var(--scale) * 1px);
+  transition: all 0.5s;
+}
+
+.lighter-head {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.lighter-container {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.container-active {
+  opacity: 1;
+  animation: container-move 0.4s ease-in-out forwards;
+}
+
+.head-active {
+  animation: bubble-appear 0.5s 0.5s ease-in-out forwards;
+}
+
+.tail-active {
+  opacity: 1;
+  animation: tail-move 0.3s 0.25s ease-in-out forwards;
+}
+
+//for the lighter bubble animation
+.bubble-1 {
+  animation: bubble-appear 0.5s ease-in-out forwards;
+}
+
+.bubble-2 {
+  animation: bubble-appear 0.5s 0.4s ease-in-out forwards;
+}
+
+.left-tail {
+  height: 2px;
+  background-image: linear-gradient(90deg, #00000000, #ffffff);
+}
+
+@keyframes container-move {
+  0% {
+    transform: translateX(calc(var(--from) * 1vw));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes tail-move {
+  0% {
+    width: calc(var(--width) * var(--scale) * 1px);
+  }
+  100% {
+    width: calc(var(--width) * 1px);
+  }
+}
+
+@keyframes bubble-appear {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  25% {
+    opacity: 1;
+    scale: 1.25;
+  }
+  50% {
+    opacity: 1;
+    scale: 0.95;
+  }
+  75% {
+    opacity: 1;
+    scale: 1.05;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

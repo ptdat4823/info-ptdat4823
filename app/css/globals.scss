@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: rgb(211, 216, 232);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #0d1224;
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  top: calc(var(--index) * 4rem - 2rem);
+}
+
+@media screen and (max-width: 1280px) {
+  .sticky-card {
+    top: calc(var(--index) * 2rem + 4rem);
+  }
+}
+
+.white-scrollbar {
+  overflow-y: auto;
+}
+.white-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  scroll-behavior: smooth;
+}
+
+.white-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.white-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+
+.white-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
