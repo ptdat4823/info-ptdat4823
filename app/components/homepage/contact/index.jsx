@@ -1,5 +1,5 @@
 // @flow strict
-import { contactsData } from "@/utils/data/contactsData";
+import { contactsData } from "@/utils/data/contacts-data";
 import Link from "next/link";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";

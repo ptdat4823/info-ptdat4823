@@ -1,5 +1,6 @@
 // @flow strict
-import { contactsData } from "@/utils/data/contactsData";
+import { portfolioData } from "@/utils/data/portfolio-data";
+import { contactsData } from "@/utils/data/contacts-data";
 import Link from "next/link";
 import { CgGitFork } from "react-icons/cg";
 import { IoStar } from "react-icons/io5";
@@ -25,7 +26,7 @@ function Footer() {
           <div className="flex items-center gap-5">
             <Link
               target="_blank"
-              href={contactsData.portfolio}
+              href={portfolioData.github}
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -33,7 +34,7 @@ function Footer() {
             </Link>
             <Link
               target="_blank"
-              href={`${contactsData.portfolio}/fork`}
+              href={`${portfolioData.github}/fork`}
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />

@@ -9,9 +9,9 @@
 
 # Demo :movie_camera:
 
-![](./public/image/demo-my-portfolio.png)
+![](./public/image/demo-screen.png)
 
-### View live preview [here](https://about-ptdat4823.vercel.app//).
+### View live preview [here](https://info-ptdat4823.vercel.app//).
 
 # Sections :bookmark:
 
@@ -44,9 +44,9 @@ git --version
 To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
 ```
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/<YOUR GITHUB USERNAME>/info-ptdat4823
 
-cd developer-portfolio
+cd info-ptdat4823
 ```
 
 ### Install packages from the root directory
@@ -83,7 +83,7 @@ NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/ptdat4823/about-ptdat4823/tree/main/utils/data).
+### Then, Customize data in the `utils/data` [folder](https://github.com/ptdat4823/info-ptdat4823/tree/main/utils/data).
 
 Ex:
 
@@ -102,7 +102,7 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/dat-pham-526299252/",
   leetcode: "https://leetcode.com/u/ptdat4823/",
   devUsername: "ptdat4823",
-  resume: "...",
+  cv: "...",
 };
 ```
 
