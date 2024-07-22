@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
 
 const DEFAULT_BTN_CLS =
-  "fixed lg:bottom-8 max-lg:bottom-4 right-4 z-50 flex items-center rounded-full bg-gradient-to-r hover:scale-[1.2] from-pink-500 to-violet-600 p-4 transition-all duration-200 ease-linear";
-const SCROLL_THRESHOLD = 50;
+  "fixed lg:bottom-8 max-lg:bottom-4 right-4 z-50 flex items-center rounded-full bg-gradient-to-r hover:scale-[1.2] from-pink-500 to-violet-600 p-4 transition-all duration-200 ease-linear hidden";
+const SCROLL_THRESHOLD = 1000;
 
 const ScrollToTop = () => {
   const [btnCls, setBtnCls] = useState(DEFAULT_BTN_CLS);
@@ -13,7 +13,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > SCROLL_THRESHOLD) {
-        setBtnCls(DEFAULT_BTN_CLS.replace(" hidden", ""));
+        setBtnCls(DEFAULT_BTN_CLS.replace("hidden", ""));
       } else {
         setBtnCls(DEFAULT_BTN_CLS + " hidden");
       }

@@ -5,7 +5,7 @@ import { cn } from "../../../utils/cn";
 
 export const Lighter = ({ children, identifier, className, move }) => {
   const options = {
-    threshold: 0,
+    threshold: 1,
   };
   const [ref, inView] = useInView(options);
   const [active, setActive] = useState(false);

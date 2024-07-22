@@ -1,49 +1,27 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
+# Table of Contents :scroll:
 
----
-
-# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
-
----
-
-# Developer Portfolio
-
-### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
-
----
-
-# Demo :movie_camera:
-
-![](./public/image/screen.png)
-
-## View live preview [here](https://abusaid.netlify.app/).
-
----
-
-## Table of Contents :scroll:
-
-- [Sections](#sections-bookmark)
 - [Demo](#demo-movie_camera)
+- [Sections](#sections-bookmark)
 - [Installation](#installation-arrow_down)
 - [Getting Started](#getting-started-dart)
 - [Usage](#usage-joystick)
 - [Packages Used](#packages-used-package)
 
----
+# Demo :movie_camera:
+
+![](./public/image/demo-my-portfolio.png)
+
+### View live preview [here](https://my-portfolio-ptdat4823s-projects.vercel.app/).
 
 # Sections :bookmark:
 
 - HERO SECTION
 - ABOUT ME
-- EXPERIENCE
+- EXPERIENCES
 - SKILLS
 - PROJECTS
 - EDUCATION
-- CONTACTS
-
----
+- CONTACT
 
 # Installation :arrow_down:
 
@@ -58,8 +36,6 @@
 node --version
 git --version
 ```
-
-## <br />
 
 # Getting Started :dart:
 
@@ -91,13 +67,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
-
 # Usage :joystick:
 
 Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
 
-Eg:
+Ex:
 
 ```env
 NEXT_PUBLIC_EMAILJS_SERVICE_ID =
@@ -109,9 +83,9 @@ NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+### Then, Customize data in the `utils/data` [folder](https://github.com/ptdat4823/my-portfolio/blob/main/utils/data).
 
-Eg:
+Ex:
 
 ```javascript
 export const personalData = {
@@ -132,12 +106,6 @@ export const personalData = {
 };
 ```
 
-`devUsername` Used for fetching blog from `dev.to`.
-
----
-
----
-
 # Packages Used :package:
 
 | Used Package List  |
@@ -150,5 +118,3 @@ export const personalData = {
 |   react-toastify   |
 |        sass        |
 |    tailwindcss     |
-
----

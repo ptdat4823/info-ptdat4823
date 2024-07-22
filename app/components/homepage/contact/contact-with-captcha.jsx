@@ -7,6 +7,7 @@ import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
+import { showErrorToast, showSuccessToast } from "../../helper/toast";
 
 function ContactWithCaptcha() {
   const [input, setInput] = useState({
@@ -29,7 +30,7 @@ function ContactWithCaptcha() {
   const handleSendMail = async (e) => {
     e.preventDefault();
     if (!captcha) {
-      toast.error("Please complete the captcha!");
+      showErrorToast("Please complete the captcha!");
       return;
     }
 
@@ -54,7 +55,7 @@ function ContactWithCaptcha() {
       );
 
       if (res.status === 200 || teleRes.status === 200) {
-        toast.success("Message sent successfully!");
+        showSuccessToast("Message sent successfully!");
         setUserInput({
           name: "",
           email: "",
@@ -63,7 +64,7 @@ function ContactWithCaptcha() {
         setCaptcha(null);
       }
     } catch (error) {
-      toast.error(error?.text || error);
+      showErrorToast(error?.text || error);
     }
   };
 

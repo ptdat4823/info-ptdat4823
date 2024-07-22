@@ -1,4 +1,5 @@
 // @flow strict
+import { personalData } from "@/utils/data/personal-data";
 import Link from "next/link";
 import { CgGitFork } from "react-icons/cg";
 import { IoStar } from "react-icons/io5";
@@ -15,7 +16,7 @@ function Footer() {
             © Developer Portfolio by{" "}
             <Link
               target="_blank"
-              href="https://www.linkedin.com/in/abu-said-bd/"
+              href={personalData.linkedIn}
               className="text-[#16f2b3]"
             >
               Pham Tien Dat
@@ -24,7 +25,7 @@ function Footer() {
           <div className="flex items-center gap-5">
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio"
+              href="https://github.com/ptdat4823/portfolio-ptdat4823"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -32,7 +33,7 @@ function Footer() {
             </Link>
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio/fork"
+              href="https://github.com/ptdat4823/portfolio-ptdat4823/fork"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />
