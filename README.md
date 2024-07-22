@@ -11,7 +11,7 @@
 
 ![](./public/image/demo-my-portfolio.png)
 
-### View live preview [here](https://my-portfolio-ptdat4823s-projects.vercel.app/).
+### View live preview [here](https://about-ptdat4823.vercel.app//).
 
 # Sections :bookmark:
 
@@ -83,7 +83,7 @@ NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/ptdat4823/my-portfolio/blob/main/utils/data).
+### Then, Customize data in the `utils/data` [folder](https://github.com/ptdat4823/about-ptdat4823/tree/main/utils/data).
 
 Ex:
 
