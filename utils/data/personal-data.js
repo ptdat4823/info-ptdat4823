@@ -12,5 +12,5 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/dat-pham-526299252/",
   leetcode: "https://leetcode.com/u/ptdat4823/",
   devUsername: "ptdat4823",
-  cv: "https://drive.google.com/file/d/1asvA8O2bN1jCHDU8524ff3Xza9wHijZS/view?usp=drive_link",
+  cv: "https://drive.google.com/file/d/1uIxtrDKNHsMeOxVKb6NEn5SE1xfv0Rid/view?usp=sharing",
 };
