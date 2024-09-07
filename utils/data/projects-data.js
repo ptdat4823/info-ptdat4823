@@ -22,34 +22,23 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Schedule Management App (Monday App Clone)",
+    name: "Live-streaming Website",
     description:
-      "I and my team have designed and developed a schedule management app. I created the UI using Android Java and implemented the back-end using Express JS. I developed the API using ExpressJS, Javascript, MongoDB. The app is used for managing schedules, tasks, and team collaboration. We have integrated Google Maps for location tracking. I have deployed the database on MongoDB Atlas.",
+      "I built an live-streaming platform for featuring real-time video. I created the UI using NextJs, Typescript, Axios and back-end using Springboot Java, MySQL. This web application is used for simple live-streaming purpose. Although it is not a professional live-streaming platform, it is a good start for a beginner to learn how to build a live-streaming platform.",
     technologies: [
-      "Java",
-      "Android Studio",
-      "Express",
-      "Google Maps",
-      "Javascript",
-      "MongoDB",
+      "Next JS",
+      "Tailwind CSS",
+      "TypeScript",
+      "Springboot Java",
+      "MySQL",
+      "Axios",
+      "Socket.io",
+      "Nginx",
+      "HLS",
     ],
     role: "Full Stack Developer",
-    code: "",
+    code: "https://github.com/ptdat4823/livestream-platform",
     demo: "",
     image: "",
   },
 ];
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-//     image: crefin,
-// },
